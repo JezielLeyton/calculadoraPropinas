@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+ # 🧮 Calculadora de Propinas y Menú
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React**, **TypeScript** y **Tailwind CSS** que permite seleccionar elementos de un menú, calcular el subtotal, agregar propinas y mostrar el total de forma clara e interactiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Propósito
 
-## Expanding the ESLint configuration
+Este proyecto fue creado como parte de mi portafolio para demostrar habilidades en:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Componentización con React
+- Tipado estático con TypeScript
+- Estilizado moderno con Tailwind CSS
+- Buenas prácticas de arquitectura de carpetas
+- Interactividad y UX sencilla para usuarios
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Tecnologías Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Herramienta       | Descripción                                     |
+|-------------------|-------------------------------------------------|
+| React             | Librería para construir interfaces de usuario   |
+| TypeScript        | Superset de JavaScript con tipado estático      |
+| Tailwind CSS      | Framework de CSS utilitario                     |
+| Vite              | Bundler ultrarrápido para desarrollo moderno    |
+| Node.js / npm     | Entorno de ejecución y gestión de dependencias  |
+
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── components/   # Componentes reutilizables
+├── data/         # Datos del menú o configuraciones
+├── helpers/      # Funciones auxiliares
+├── hooks/        # Custom Hooks
+├── types/        # Tipos TypeScript
+├── App.tsx       # Componente raíz
+├── main.tsx      # Punto de entrada
+└── index.css     # Estilos globales
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Funcionalidad
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Selección de productos del menú.
+- Cálculo de subtotal.
+- Aplicación de porcentaje de propina.
+- Visualización clara del total a pagar.
+
+---
+
+
+## 👨‍💻 Autor
+
+**Jeziel Leyton**  
+Desarrollador web fullstack en crecimiento.  
+🔗 [GitHub](https://github.com/JezielLeyton)  
+🔗 [LinkedIn](https://www.linkedin.com/in/jeziel-leyton-morales-108a10135)
+
+---
+
+## 📝 Licencia
+
+Este proyecto está disponible bajo licencia MIT.
+
