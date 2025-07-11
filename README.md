@@ -62,9 +62,4 @@ Desarrollador web fullstack en crecimiento.
 🔗 [GitHub](https://github.com/JezielLeyton)  
 🔗 [LinkedIn](https://www.linkedin.com/in/jeziel-leyton-morales-108a10135)
 
----
-
-## 📝 Licencia
-
-Este proyecto está disponible bajo licencia MIT.
 
